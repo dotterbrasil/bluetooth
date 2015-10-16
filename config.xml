@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0"
+        id="br.dotter.bluetooth"
+        version   = "1.0.0">
+		
+    <name>Bluetooth</name>
+    <description>
+        Teste Bluetooth.
+    </description>
+	
+	<author href="http://www.dotter.com.br" email="eduardo@dotter.com.br">
+    Dotter do Brasil Ltda
+    </author>
+	
+	<gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" />
+	<!--gap:plugin name="org.bcsphere.bluetooth" version="0.5.1" /-->
+    <gap:plugin name="org.apache.cordova.device" />
+	
+	<preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="orientation"      value="portrait" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+    <preference name="webviewbounce"    value="false" />
+
+    <!--icon src="foto.jpg" />
+    <gap:splash src="foto.jpg" /-->
+	
+	<!--feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    <feature name="http://api.phonegap.com/1.0/device"/-->
+	
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />   
+</widget>
+
