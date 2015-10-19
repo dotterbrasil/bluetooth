@@ -15,7 +15,7 @@
 	<!--gap:plugin name="com.megster.cordova.bluetoothserial" version="0.3.3" /-->
 	<!--gap:plugin name="org.bcsphere.bluetooth" version="0.5.1" /-->
 
-<gap:plugin name="cordova.plugin.bluetoothserial" source="npm" />
+<gap:plugin name="cordova.plugins.bluetoothserial" source="npm" />
 
 <!--gap:plugin name="cordova.plugins.diagnostic" source="npm" /-->
 
