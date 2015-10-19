@@ -19,7 +19,14 @@ alert('aaaa');
 			
 			 
 			
-cordova.plugins.diagnostic.isBluetoothEnabled(alert('sim'), alert('nao'));
+
+
+cordova.plugins.diagnostic.isBluetoothEnabled(function(enabled){
+    alert("Bluetooth is " + (enabled ? "enabled" : "disabled"));
+}, function(error){
+    alert("The following error occurred: "+error);
+});
+
 
 
 			}			
