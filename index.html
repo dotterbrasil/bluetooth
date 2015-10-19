@@ -9,6 +9,10 @@
         <script type="text/javascript" src="js/index.js"></script>	
         <script type="text/javascript">
             /*app.initialize();		*/
+
+function fui(){
+alert('aaaa');
+}
 			
 			function teste(){	
 			alert('1');		
@@ -27,10 +31,7 @@
 			//var BC.Bluetooth = require("org.bcsphere.bcjs");
 			alert('2');
 			
-			BC.Bluetooth.GetPairedDevices(function(devices) {
-						alert('3');
-						alert(devices);
-				});
+			BC.Bluetooth.GetPairedDevices(fui);
 			}			
         </script>
     </head>
