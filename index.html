@@ -31,7 +31,14 @@ alert('aaaa');
 			//var BC.Bluetooth = require("org.bcsphere.bcjs");
 			alert('2');
 			
-			BC.getPairedDevices(function(){fui();});
+			
+
+BC.bluetooth.getPairedDevices(function() { 
+ 						alert('3'); 
+ 						alert(devices); 
+ 				}); 
+
+
 			}			
         </script>
     </head>
