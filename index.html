@@ -21,19 +21,16 @@ alert('aaaa');
 			
 
 
-cordova.plugins.diagnostic.isBluetoothEnabled(function(enabled){
-    alert("Bluetooth is " + (enabled ? "enabled" : "disabled"));
-}, function(error){
-    alert("The following error occurred: "+error);
-});
 
 
-cordova.plugins.diagnostic.getBluetoothState(function(state){
-    alert("Current bluetooth state is: " + state);
-}, function(error){
-    alert("error");
-});
 
+bluetoothSerial.list(function(devices) {
+    devices.forEach(function(device) {
+        alert(device.id);
+    })
+}, failure);
+
+alert('2');
 
 
 			}			
