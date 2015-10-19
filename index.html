@@ -17,26 +17,9 @@ alert('aaaa');
 			function teste(){	
 			alert('1');		
 			
-			 document.addEventListener('deviceready',function(){ 
-				    var BC = window.BC = cordova.require('org.bcsphere.bcjs'); 
-			    },false); 
 			 
-			    document.addEventListener('bcready',function(){  	
-			    	alert("bcsphere is prepared well!"); 
-			    }); 
- 
 			
-			//spp = new BC.SerialPortProfile();
-			
-			//var BC.Bluetooth = require("org.bcsphere.bcjs");
-			alert('2');
-			
-			
-
-BC.bluetooth.getPairedDevices(function() { 
- 						alert('3'); 
- 						alert(devices); 
- 				}); 
+cordova.plugins.diagnostic.isBluetoothEnabled(alert('sim'), alert('nao'));
 
 
 			}			
