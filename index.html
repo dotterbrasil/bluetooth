@@ -12,7 +12,15 @@
 			
 			function teste(){	
 			alert('1');		
-			var 
+			
+			 document.addEventListener('deviceready',function(){ 
+				    var BC = window.BC = cordova.require('org.bcsphere.bcjs'); 
+			    },false); 
+			 
+			    document.addEventListener('bcready',function(){  	
+			    	alert("bcsphere is prepared well!"); 
+			    }); 
+ 
 			
 			//spp = new BC.SerialPortProfile();
 			
