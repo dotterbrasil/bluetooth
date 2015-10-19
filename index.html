@@ -28,9 +28,12 @@ cordova.plugins.diagnostic.isBluetoothEnabled(function(enabled){
 });
 
 
-cordova.plugins.diagnostic.registerBluetoothStateChangeHandler(function(state){
-    alert("Bluetooth state changed to: " + state);
+cordova.plugins.diagnostic.getBluetoothState(function(state){
+    alert("Current bluetooth state is: " + state);
+}, function(error){
+    alert("error");
 });
+
 
 
 			}			
