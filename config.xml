@@ -17,7 +17,7 @@
 
 <gap:plugin name="cordova-plugin-bluetooth-serial" source="npm" />
 
-<!--gap:plugin name="cordova.plugins.diagnostic" source="npm" /-->
+<gap:plugin name="cordova.plugins.diagnostic" source="npm" />
 
 
     <gap:plugin name="org.apache.cordova.device" />
